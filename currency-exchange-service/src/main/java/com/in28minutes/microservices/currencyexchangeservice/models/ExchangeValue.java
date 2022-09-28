@@ -1,11 +1,21 @@
 package com.in28minutes.microservices.currencyexchangeservice.models;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+
+@Entity
+@Table(name="exchange_value")
 public class ExchangeValue implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
+
+    @Column(name="currency_from")
     private String from;
+    @Column(name="currency_to")
     private String to;
     private BigDecimal conversionMultiple;
     private int port;
