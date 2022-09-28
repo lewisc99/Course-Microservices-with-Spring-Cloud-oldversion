@@ -8,15 +8,17 @@ public class ExchangeValue implements Serializable {
     private String from;
     private String to;
     private BigDecimal conversionMultiple;
+    private int port;
 
 
     public  ExchangeValue(){}
 
-    public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
+    public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple, int port) {
         this.id = id;
         this.from = from;
         this.to = to;
         this.conversionMultiple = conversionMultiple;
+        this.port = port;
     }
 
     public Long getId() {
@@ -49,5 +51,13 @@ public class ExchangeValue implements Serializable {
 
     public void setConversionMultiple(BigDecimal conversionMultiple) {
         this.conversionMultiple = conversionMultiple;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 }
