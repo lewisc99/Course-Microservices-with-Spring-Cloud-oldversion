@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 
 
 @Entity
-@Table(name="exchange_value")
 public class ExchangeValue implements Serializable {
 
     @Id

@@ -24,6 +24,11 @@ public class CurrencyConversionBean {
         this.port = port;
     }
 
+    public CurrencyConversionBean(String from, String to) {
+        this.from = from;
+        this.to = to;
+    }
+
     public Long getId() {
         return id;
     }
