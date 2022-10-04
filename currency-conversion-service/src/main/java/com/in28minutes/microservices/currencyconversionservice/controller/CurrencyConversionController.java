@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/currency-converter")
+//@RequestMapping("/currency-converter")
 public class CurrencyConversionController {
 
 
