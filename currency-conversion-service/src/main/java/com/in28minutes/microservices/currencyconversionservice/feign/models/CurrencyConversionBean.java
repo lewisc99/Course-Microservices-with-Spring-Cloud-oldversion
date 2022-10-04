@@ -1,4 +1,4 @@
-package com.in28minutes.microservices.currencyconversionservice.models;
+package com.in28minutes.microservices.currencyconversionservice.feign.models;
 
 import java.math.BigDecimal;
 

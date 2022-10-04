@@ -2,7 +2,7 @@ package com.in28minutes.microservices.currencyconversionservice.controller;
 
 
 import com.in28minutes.microservices.currencyconversionservice.feign.CurrencyExchangeServiceProxy;
-import com.in28minutes.microservices.currencyconversionservice.models.CurrencyConversionBean;
+import com.in28minutes.microservices.currencyconversionservice.feign.models.CurrencyConversionBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+@RequestMapping("/currency-converter")
 public class CurrencyConversionController {
 
 

@@ -50,7 +50,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-        <dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-ribbon -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
+			<version>1.4.7.RELEASE</version>
+		</dependency>
+
+
+		<dependency>
             <groupId>com.in28minutes.microservices</groupId>
             <artifactId>currency-exchange-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
