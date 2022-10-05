@@ -1,0 +1,20 @@
+
+version: '3.4'
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    hostname: rabbitmq
+    container_name: rabbitmqv1
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  zipkin-server:
+    image: openzipkin/zipkin:2.23
+    container_name: zipkin-server
+    ports:
+      - "9411:9411"
+    environment:
+      RABBIT_URI: amqp://guest:guest@rabbitmq:5672
+    depends_on:
+      - rabbitmq
